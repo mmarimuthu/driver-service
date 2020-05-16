@@ -1,0 +1,11 @@
+version: '2'
+services:
+  drivermanagementservice-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/driverManagementService/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=driverManagementService
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
