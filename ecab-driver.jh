@@ -50,3 +50,5 @@ relationship OneToOne {
 	Driver{user} to User
     Driver{carDetails} to CarDetails
 }
+
+microservice Driver with driver
