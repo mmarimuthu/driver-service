@@ -14,7 +14,7 @@ application {
   // filter entities here
   entities User, Driver, CarDetails
 }
-
+ 
 entity User {
 	firstName String required
     lastName String
@@ -50,3 +50,7 @@ relationship OneToOne {
 	Driver{user} to User
     Driver{carDetails} to CarDetails
 }
+
+microservice all with driverService
+service all with serviceImpl
+clientRootFolder Driver, CarDetails
