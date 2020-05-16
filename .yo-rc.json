@@ -2,18 +2,18 @@
   "generator-jhipster": {
     "applicationType": "microservice",
     "gitCompany": "",
-    "baseName": "driverManagementService",
+    "baseName": "driverService",
     "packageName": "com.ecab.driver",
     "packageFolder": "com/ecab/driver",
-    "serverPort": 3020,
+    "serverPort": "3020",
     "serviceDiscoveryType": "eureka",
     "authenticationType": "jwt",
     "uaaBaseName": "../uaa",
     "cacheProvider": "no",
-    "enableHibernateCache": false,
+    "enableHibernateCache": true,
     "websocket": false,
     "databaseType": "sql",
-    "devDatabaseType": "postgresql",
+    "devDatabaseType": "h2Disk",
     "prodDatabaseType": "postgresql",
     "searchEngine": false,
     "enableSwaggerCodegen": false,
@@ -21,16 +21,19 @@
     "buildTool": "maven",
     "useSass": true,
     "clientPackageManager": "npm",
-    "testFrameworks": ["cucumber"],
+    "testFrameworks": [],
     "enableTranslation": true,
     "nativeLanguage": "en",
-    "languages": ["fr", "en"],
+    "languages": [
+      "en",
+      "fr"
+    ],
     "clientFramework": "angularX",
     "jhiPrefix": "jhi",
     "jhipsterVersion": "6.8.0",
     "jwtSecretKey": "NTFlMDNhMDJkMGY2ZjVlOWRkOTc5MmRjNzg5OTlmYWFlZTA0YmZhNjhmYjE1MDA0YWExNzJiMjIxYWQ3NzdkNmQ0ZjZiNTQ4YmZlOTNmOTc2OGNiZDYxM2U0YjcwOGFhMWIwOTJlNGMzMTk2MDk4NzA2OWI2NDBiODZkYWVhNWM=",
     "embeddableLaunchScript": false,
-    "creationTimestamp": 1589640113528,
+    "creationTimestamp": 1589640120404,
     "entitySuffix": "",
     "dtoSuffix": "DTO",
     "otherModules": [],
@@ -40,5 +43,10 @@
   },
   "git-provider": "GitHub",
   "git-company": "mmarimuthu",
-  "repository-name": "driver-service"
+  "repository-name": "driver-service",
+  "entities": [
+    "User",
+    "Driver",
+    "CarDetails"
+  ]
 }
