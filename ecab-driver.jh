@@ -1,0 +1,52 @@
+application {
+  config {
+    packageName com.ecab.driver
+    baseName driverService
+    applicationType microservice
+    serverPort 3020
+    serviceDiscoveryType eureka
+    authenticationType jwt
+    buildTool maven
+    cacheProvider no
+    prodDatabaseType postgresql
+    // more configuration options goes here
+  }
+  // filter entities here
+  entities User, Driver, CarDetails
+}
+
+entity User {
+	firstName String required
+    lastName String
+    email String required
+    gender String
+    address1 String
+    city String
+    state String
+    zipcode String
+    country String
+    type String required
+    mobile String required
+}
+
+entity Driver {
+    id String,
+    idProof String,
+    status String
+}
+
+entity CarDetails {
+	id String required
+	number String required
+	model String
+	manufacturer String
+	type String required
+	driverId String
+	status String
+	currentTripId String
+}
+
+relationship OneToOne {
+	Driver{user} to User
+    Driver{carDetails} to CarDetails
+}
