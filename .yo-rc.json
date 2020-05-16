@@ -33,7 +33,7 @@
     "jhipsterVersion": "6.8.0",
     "jwtSecretKey": "NTFlMDNhMDJkMGY2ZjVlOWRkOTc5MmRjNzg5OTlmYWFlZTA0YmZhNjhmYjE1MDA0YWExNzJiMjIxYWQ3NzdkNmQ0ZjZiNTQ4YmZlOTNmOTc2OGNiZDYxM2U0YjcwOGFhMWIwOTJlNGMzMTk2MDk4NzA2OWI2NDBiODZkYWVhNWM=",
     "embeddableLaunchScript": false,
-    "creationTimestamp": 1589640120404,
+    "creationTimestamp": 1589643060254,
     "entitySuffix": "",
     "dtoSuffix": "DTO",
     "otherModules": [],
